@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yebox | Three-Month Go-to-Market Plan</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#101820;--paper:#f4f3ed;--green:#2e7d32;--spark:#9be600;--teal:#005b52;--mint:#6fe3b3;--red:#f82f51;--blue:#008ee6;--line:rgba(16,24,32,.16);--muted:#68716e;--white:#fff;--fiona:#d9f3ff;--fiona-ink:#0b3b58;--axeon:#f82f51;--axeon-dark:#37121c}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#111;color:var(--ink);font-family:Manrope,Arial,sans-serif}body{overflow:hidden}.deck{height:100dvh;width:100vw;display:grid;place-items:center}.slide{width:min(100vw,177.78vh);height:min(100dvh,56.25vw);aspect-ratio:16/9;background:var(--paper);position:relative;overflow:hidden;display:none;padding:4.5% 5.2% 4.1%;}.slide.active{display:flex;flex-direction:column}.slide:after{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(16,24,32,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(16,24,32,.025) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.35),transparent 72%)}.slide>*{position:relative;z-index:1}.topline{display:flex;align-items:center;justify-content:space-between;font:500 clamp(8px,.65vw,12px) 'DM Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:auto}.brand{display:flex;gap:9px;align-items:center;color:var(--ink);font-weight:800;letter-spacing:-.05em}.brandmark{width:17px;height:17px;background:var(--green);border-radius:50% 50% 50% 8%;display:inline-block;box-shadow:7px 0 0 -3px var(--spark)}.foot{position:absolute;bottom:2.2%;left:5.2%;right:5.2%;display:flex;justify-content:space-between;font:10px 'DM Mono',monospace;color:var(--muted);z-index:3}.eyebrow{font:500 clamp(9px,.75vw,13px) 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.14em;color:var(--green);margin:0 0 1.2em}.title{font-size:clamp(32px,4.8vw,76px);line-height:.98;letter-spacing:-.065em;font-weight:800;margin:0;max-width:1000px}.title .accent{color:var(--green)}.sub{font-size:clamp(13px,1.18vw,19px);line-height:1.5;color:#4d5954;max-width:720px;margin:1.4em 0 0}.section-title{font-size:clamp(26px,3vw,48px);line-height:1;letter-spacing:-.055em;margin:0 0 .5em;font-weight:800}.body{font-size:clamp(11px,.95vw,15px);line-height:1.48;color:#46514c}.small{font-size:clamp(9px,.72vw,12px);line-height:1.45;color:var(--muted)}.mono{font:500 clamp(8px,.65vw,11px) 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2.2%}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5%}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1%}.card{background:#fff;border:1px solid var(--line);padding:2.2%;border-radius:10px;min-width:0}.card h3{font-size:clamp(14px,1.25vw,20px);letter-spacing:-.04em;margin:0 0 .55em}.card p{margin:.35em 0}.tag{display:inline-flex;padding:.45em .7em;border-radius:99px;background:#e8ece5;color:var(--ink);font:500 clamp(8px,.65vw,11px) 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.06em}.tag.green{background:var(--spark)}.tag.blue{background:#bfeaff;color:var(--fiona-ink)}.tag.red{background:#ffd7df;color:#7e1830}.metric{font-size:clamp(28px,3.8vw,58px);font-weight:800;letter-spacing:-.07em;line-height:1}.metric-label{font:500 clamp(8px,.7vw,11px) 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:.6em}.rule{height:1px;background:var(--line);margin:1.2em 0}.list{padding:0;margin:.6em 0 0;list-style:none}.list li{font-size:clamp(10px,.82vw,13px);line-height:1.42;padding:.52em 0;border-top:1px solid var(--line)}.list li:first-child{border-top:0}.list b{color:var(--ink)}.pillrow{display:flex;flex-wrap:wrap;gap:.45em;margin-top:.8em}.pill{border:1px solid var(--line);padding:.5em .75em;border-radius:100px;font-size:clamp(9px,.7vw,12px);background:#fff}.table{width:100%;border-collapse:collapse;font-size:clamp(9px,.78vw,13px);line-height:1.35}.table th{text-align:left;font:500 clamp(8px,.62vw,10px) 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:.7em .65em;border-bottom:1px solid var(--ink)}.table td{padding:.72em .65em;vertical-align:top;border-bottom:1px solid var(--line)}.table tr:last-child td{border-bottom:0}.table strong{color:var(--ink)}.table .muted{color:var(--muted)}.bar{height:7px;background:#dfe4dc;border-radius:10px;overflow:hidden}.bar span{display:block;height:100%;background:var(--green)}
+/* Cover */
+.cover{background:#101820;color:var(--paper);padding:4.7% 5.2%}.cover:after{opacity:.16;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px)}.cover .topline,.cover .foot{color:#d0d8d2}.cover .brand{color:#fff}.cover .brandmark{background:var(--spark)}.cover .eyebrow{color:var(--spark)}.cover .title{font-size:clamp(43px,6.5vw,100px);max-width:58%;position:absolute;left:5.2%;top:27%;z-index:4}.cover .title .accent{color:var(--spark)}.cover .sub{color:#e0e6e1;max-width:47%;position:absolute;left:5.2%;top:69%;z-index:4;margin:0;font-size:clamp(12px,1vw,16px)}.cover-meta{position:absolute;bottom:10%;left:5.2%;font:10px 'DM Mono',monospace;color:#c1cbc4;line-height:1.8;z-index:4}.cover-gallery{position:absolute;right:0;top:0;width:47%;height:100%;display:grid;grid-template-rows:repeat(3,1fr);gap:3px;overflow:hidden}.cover-gallery:before{content:'';position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,#101820 0%,rgba(16,24,32,.45) 20%,transparent 55%),linear-gradient(0deg,rgba(16,24,32,.55),transparent 28%);pointer-events:none}.cover-photo{position:relative;overflow:hidden;min-height:0}.cover-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9)}.cover-photo span{position:absolute;z-index:3;right:7%;bottom:10%;font:500 10px 'DM Mono',monospace;letter-spacing:.12em;color:white;text-transform:uppercase;text-shadow:0 2px 10px #0008}.cover-photo.community-photo img{object-position:center 48%}.cover-photo.fiona-photo img{object-position:center 45%}.cover-photo.axeon-photo img{object-position:center 50%}
+/* product worlds */
+.community{--prod:var(--green);--prod-light:#dff2d9;--prod-dark:#0c2c1b}.community .eyebrow,.community .section-title .accent{color:var(--green)}.fiona{background:#eaf7fc;color:var(--fiona-ink);--prod:#008ee6}.fiona:after{opacity:.45}.fiona .eyebrow{color:#0878ad}.fiona .section-title .accent{color:#008ee6}.axeon{background:#fff0f2;color:var(--axeon-dark);--prod:var(--red)}.axeon .eyebrow{color:#c51d43}.axeon .section-title .accent{color:var(--red)}
+/* product visuals */
+.ui-shell{background:#fff;border:1px solid #cdd7d0;border-radius:14px;padding:3%;box-shadow:0 18px 45px #152b1c18}.ui-top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e3e8e3;padding-bottom:10px;margin-bottom:10px;font-size:10px}.dots{display:flex;gap:4px}.dots i{width:6px;height:6px;background:#d5ddd6;border-radius:50%}.ui-row{display:flex;gap:8px;margin:8px 0;align-items:center}.avatar{width:25px;height:25px;border-radius:8px;background:#dcebdc;flex-shrink:0}.ui-line{height:7px;background:#e8ede8;border-radius:5px;flex:1}.ui-line.short{max-width:35%}.ui-chip{padding:5px 8px;background:#eaf4e6;border-radius:6px;font-size:8px;color:#28632d}.ui-panels{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ui-stat{background:#f5f8f4;padding:10px;border-radius:8px}.ui-stat b{font-size:18px;display:block}.fiona .ui-shell{border-color:#b9dced;box-shadow:0 20px 50px #0c5e861c}.inbox{position:relative;height:250px;min-height:180px}.inbox-card{position:absolute;background:#fff;border:1px solid #c9e4f1;border-radius:16px;box-shadow:0 18px 35px #155b7a1c;padding:14px}.inbox-card.main{width:72%;height:80%;left:14%;top:10%;z-index:2}.inbox-card.float1{width:36%;left:0;top:0;transform:rotate(-7deg)}.inbox-card.float2{width:34%;right:0;bottom:0;transform:rotate(7deg)}.msg{background:#edf8fc;border-radius:9px;padding:8px;margin:8px 0;font-size:9px}.msg.dark{background:#0b3b58;color:white;margin-left:22%}.inbox-badge{display:inline-block;background:#c7f1ff;border-radius:99px;padding:4px 7px;font-size:8px}.axeon-visual{background:#31111b;border-radius:18px;padding:5%;color:white;min-height:220px;position:relative;overflow:hidden}.offer{background:#fff;color:#32121c;border-radius:12px;padding:13px;width:58%;transform:rotate(-4deg);box-shadow:0 16px 25px #0004}.offer .big{font-size:35px;font-weight:800;letter-spacing:-.08em;color:var(--red)}.coin{position:absolute;border-radius:50%;background:var(--red);width:65px;height:65px;right:10%;top:12%;display:grid;place-items:center;color:#fff;font-size:23px;font-weight:800;box-shadow:0 0 0 10px #f82f5133}.offer.smalloffer{position:absolute;width:42%;right:4%;bottom:8%;transform:rotate(7deg);padding:9px}.offer.smalloffer .big{font-size:24px}
+/* funnel */
+.funnel{display:grid;grid-template-columns:repeat(3,1fr);gap:1%;margin-top:1em}.funnel-step{padding:1.4em;border-radius:10px;background:#fff;border:1px solid var(--line);position:relative;min-height:170px}.funnel-step:nth-child(1){border-top:5px solid #9be600}.funnel-step:nth-child(2){border-top:5px solid #6fe3b3}.funnel-step:nth-child(3){border-top:5px solid #2e7d32}.funnel-step .num{font:500 10px 'DM Mono',monospace;color:var(--muted)}.funnel-step h3{font-size:clamp(17px,1.8vw,27px);letter-spacing:-.05em;margin:.5em 0}.funnel-step p{font-size:clamp(10px,.8vw,13px);line-height:1.4;margin:0;color:#53605a}.funnel-step .deliver{position:absolute;bottom:12px;left:1.4em;font:500 9px 'DM Mono',monospace;text-transform:uppercase;color:var(--green)}
+/* budget */
+.total{background:var(--ink);color:white;border-radius:14px;padding:2.3%}.total .metric{color:var(--spark)}.total .metric-label{color:#aab8ae}.budget-note{font-size:clamp(9px,.72vw,12px);color:#c5cec8;line-height:1.4;margin-top:1em}
+/* controls */
+.controls{position:fixed;z-index:20;bottom:14px;right:18px;display:flex;align-items:center;gap:8px;color:white;font:11px 'DM Mono',monospace}.controls button{border:1px solid #ffffff55;background:#151c1b;color:white;border-radius:50%;width:34px;height:34px;font-size:16px;cursor:pointer}.controls button:hover{background:#2e7d32}.progress{position:fixed;bottom:0;left:0;height:3px;background:var(--spark);z-index:30;width:0;transition:width .2s}.hint{position:fixed;bottom:22px;left:18px;color:#aaa;font:10px 'DM Mono',monospace;z-index:20}
+@media(max-width:700px){.slide{padding:5% 5% 8%}.grid2,.grid3,.grid4{gap:7px}.card{padding:3%}.foot{bottom:2%}.cover-gallery{width:48%;opacity:.9}.cover .title{max-width:68%;font-size:clamp(34px,7vw,64px);top:28%}.cover .sub{max-width:60%;top:69%}.cover-meta{bottom:4%}.table td{padding:.5em .35em}.table th{padding:.5em .35em}.funnel-step{min-height:140px;padding:1em}.funnel-step .deliver{left:1em}.inbox{height:180px}}
+@media print{body{overflow:visible;background:white}.deck{display:block;height:auto;width:auto}.slide{display:flex!important;width:13.333in;height:7.5in;break-after:page}.controls,.hint,.progress{display:none}}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+<section class="slide cover active" style="background:#ffffff;color:#101820;padding:5.2% 6%;">
+ <div class="topline" style="color:#68716e"><span></span><span>Go-to-market strategy</span></div>
+ <div style="margin:auto 0;max-width:850px">
+  <p class="eyebrow" style="color:#2e7d32">Three-month plan · October–December 2026</p>
+  <h1 class="title" style="position:static;left:auto;top:auto;z-index:auto;font-size:clamp(40px,4.8vw,68px);line-height:1.02;max-width:760px;color:#101820;margin:.45em 0 .25em">Go-to-market<br><span style="color:#2e7d32">strategy.</span></h1>
+  <p class="sub" style="position:static;left:auto;top:auto;z-index:auto;color:#4d5954;max-width:650px;margin:0;font-size:15px">Community OS · Fiona · Axeon</p>
+ </div>
+ <div class="foot" style="color:#68716e"><span>PREPARED FOR YEBOX TECHNOLOGIES</span><span>FOR REVIEW</span></div>
+</section>
+<section class="slide">
+ <div class="topline"><span>01 / The mandate</span></div>
+ <p class="eyebrow">The commercial brief</p><h2 class="title">Move each product<br>from <span class="accent">attention to adoption.</span></h2>
+ <div class="grid3" style="margin-top:4%;">
+  <div class="card"><span class="tag green">Community OS</span><div class="metric" style="margin-top:.5em">1,000</div><div class="metric-label">Communities target</div><p class="body">Acquire and activate membership organisations. The target is active communities, not ad reach or form submissions.</p></div>
+  <div class="card"><span class="tag blue">Fiona</span><h3 style="margin-top:1em">One inbox.<br>Every customer.</h3><p class="body">Make the shared inbox tangible. Show how teams bring WhatsApp, email and web chat into one working view, with AI support for routine replies.</p></div>
+  <div class="card"><span class="tag red">Axeon</span><h3 style="margin-top:1em">Loyalty that<br>drives return.</h3><p class="body">Build merchant understanding and consumer participation around offers, discounts and repeat purchase behaviour.</p></div>
+ </div>
+ <p class="small" style="margin-top:auto;max-width:850px">The campaign has one shared operating system, but each product requires its own audience logic, message, content and conversion path.</p>
+ <div class="foot"><span>YEBOX / STRATEGY</span><span>02 / 20</span></div>
+</section>
+<section class="slide">
+ <div class="topline"><span>02 / Strategic architecture</span></div>
+ <p class="eyebrow">Shared method · Different market logic</p><h2 class="section-title">One operating rhythm.<br><span class="accent">Three product strategies.</span></h2>
+ <div class="grid2" style="margin-top:2%;flex:1;">
+  <div>
+   <div class="card" style="margin-bottom:2%"><h3>What is shared</h3><ul class="list"><li><b>Week 1:</b> Positioning, audience, tone, campaign concept and message hierarchy.</li><li><b>Every month:</b> Editorial calendar, content production, paid distribution and performance review.</li><li><b>Every product:</b> Dedicated sales landing page and conversion journey.</li><li><b>Every campaign:</b> Track qualified leads, onboarding and actual product use.</li></ul></div>
+   <div class="card"><h3>What stays distinct</h3><p class="body">Product-specific audiences, visual worlds, content examples, proof points, conversion actions and adoption metrics.</p></div>
+  </div>
+  <div class="card" style="background:var(--ink);color:white;display:flex;flex-direction:column;justify-content:space-between"><div><p class="eyebrow" style="color:var(--spark)">The governing principle</p><div style="font-size:clamp(24px,3vw,45px);font-weight:800;line-height:1.02;letter-spacing:-.06em">Reach is a signal.<br><span style="color:var(--spark)">Adoption is the outcome.</span></div></div><p style="color:#bdc9c0;font-size:clamp(11px,.9vw,14px);line-height:1.5">Impressions, views and engagement help diagnose distribution. They do not prove that a community is active, a business has connected its inbox or a merchant is generating repeat transactions.</p></div>
+ </div><div class="foot"><span>YEBOX / STRATEGY</span><span>03 / 20</span></div>
+</section>
+<section class="slide">
+ <div class="topline"><span>03 / The 90-day system</span></div>
+ <p class="eyebrow">Campaign sequence</p><h2 class="section-title">Build the system, then<br><span class="accent">run the system.</span></h2>
+ <div class="grid3" style="margin-top:3%;flex:1;">
+  <div class="card"><span class="tag green">Month 01 · Foundation</span><h3 style="margin-top:1em">Position & prepare</h3><ul class="list"><li>Confirm product positioning and audience priorities.</li><li>Develop campaign concepts, slogans and tone.</li><li>Build three sales landing pages.</li><li>Produce evergreen product highlight reels.</li><li>Set tracking, lead routing and reporting.</li></ul></div>
+  <div class="card"><span class="tag">Month 02 · Market entry</span><h3 style="margin-top:1em">Publish & acquire</h3><ul class="list"><li>Run daily product-specific publishing cadence.</li><li>Launch paid awareness and feature campaigns.</li><li>Collect and route qualified enquiries.</li><li>Run demos and support onboarding.</li><li>Review message and channel performance.</li></ul></div>
+  <div class="card"><span class="tag">Month 03 · Optimisation</span><h3 style="margin-top:1em">Convert & improve</h3><ul class="list"><li>Prioritise strongest audience and creative signals.</li><li>Retarget engaged prospects where tracking allows.</li><li>Improve landing-page conversion.</li><li>Follow up on onboarding and early usage.</li><li>Report adoption, pipeline and next-quarter needs.</li></ul></div>
+ </div>
+ <div class="small" style="margin-top:1.3em">Week 1 across all products is reserved for positioning and campaign development. Production and media activity follow the approved direction.</div>
+ <div class="foot"><span>YEBOX / 90-DAY PLAN</span><span>04 / 20</span></div>
+</section>
+<section class="slide community">
+ <div class="topline"><span>04 / Product strategy</span></div>
+ <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:4%;align-items:center;flex:1">
+  <div><p class="eyebrow">Social architecture · Operations · Member CRM</p><h2 class="title">Run your whole<br><span class="accent">community</span><br>from one place.</h2><p class="sub">Digital infrastructure for membership organisations. Bring member administration and the day-to-day work of running an organisation into one operating environment.</p><div class="pillrow"><span class="pill">Associations</span><span class="pill">Churches</span><span class="pill">Alumni groups</span><span class="pill">Cooperatives</span><span class="pill">Professional bodies</span><span class="pill">Unions</span></div></div>
+  <div class="ui-shell"><div class="ui-top"><b>COMMUNITY OS / ORGANISATION OVERVIEW</b><span class="ui-chip">LIVE VIEW</span></div><div class="ui-panels"><div class="ui-stat"><span class="small">Members</span><b>2,480</b><span class="ui-chip">Member records</span></div><div class="ui-stat"><span class="small">Branches</span><b>08</b><span class="ui-chip">Administration</span></div><div class="ui-stat"><span class="small">Payments</span><b>₦—</b><span class="ui-chip">Ledger view</span></div><div class="ui-stat"><span class="small">Events</span><b>04</b><span class="ui-chip">Organisation calendar</span></div></div><div class="rule"></div><div class="ui-row"><div class="avatar"></div><div class="ui-line"></div><span class="ui-chip">Member record</span></div><div class="ui-row"><div class="avatar" style="background:#e7f2cf"></div><div class="ui-line short"></div><span class="ui-chip">Dues tracked</span></div><div class="ui-row"><div class="avatar" style="background:#d8eee8"></div><div class="ui-line"></div><span class="ui-chip">Branch update</span></div><p class="small">Illustrative interface composition, not a live product screenshot.</p></div>
+ </div><div class="foot"><span>COMMUNITY OS / MARKET & ADOPTION</span><span>05 / 20</span></div>
+</section>
+<section class="slide community">
+ <div class="topline"><span>05 / Audience map</span></div>
+ <p class="eyebrow">Who needs to buy this?</p><h2 class="section-title">Reach the people<br><span class="accent">who run the organisation.</span></h2>
+ <div class="grid2" style="margin-top:2%;flex:1">
+  <div class="card"><span class="tag green">Primary buyers</span><h3 style="margin-top:.8em">Executive leadership & administrators</h3><table class="table"><tr><td><b>Examples</b></td><td>President, general secretary, executive secretary, administrator, operations lead.</td></tr><tr><td><b>Pressure points</b></td><td>Fragmented member records, branch coordination, payment visibility, reporting and continuity when officers change.</td></tr><tr><td><b>Message</b></td><td>Run the organisation with one dependable operating record.</td></tr><tr><td><b>Reach</b></td><td>Leadership networks, association events, professional bodies, targeted LinkedIn and Meta campaigns.</td></tr></table></div>
+  <div class="card"><span class="tag">Secondary buyers & influencers</span><h3 style="margin-top:.8em">Finance, membership & branch officers</h3><table class="table"><tr><td><b>Examples</b></td><td>Treasurer, membership secretary, branch coordinator, IT/admin support.</td></tr><tr><td><b>Pressure points</b></td><td>Manual dues reconciliation, duplicate records, member updates, event coordination and recurring follow-up.</td></tr><tr><td><b>Message</b></td><td>Spend less time maintaining scattered records and chasing updates.</td></tr><tr><td><b>Reach</b></td><td>Role-specific demos, operational explainers, referrals from leadership and association communities.</td></tr></table></div>
+ </div><p class="small" style="margin-top:1em">Priority launch geographies discussed: Lagos, Abuja and Port Harcourt. Validate organisation density and sales coverage before allocating media by city.</p>
+ <div class="foot"><span>COMMUNITY OS / BUYER SEGMENTATION</span><span>06 / 20</span></div>
+</section>
+<section class="slide community">
+ <div class="topline"><span>06 / Positioning</span></div>
+ <p class="eyebrow">Positioning territories · For exploration</p><h2 class="section-title">A system that supports<br><span class="accent">the people behind the community.</span></h2>
+ <div class="grid3" style="margin-top:3%;flex:1">
+  <div class="card" style="background:#e5f3dd"><span class="mono">Territory 01</span><h3 style="font-size:clamp(20px,2.1vw,32px);margin-top:1.2em">Your community team's community team.</h3><p class="body">Frames the product as operational support for the people already doing the work.</p></div>
+  <div class="card"><span class="mono">Territory 02</span><h3 style="font-size:clamp(20px,2.1vw,32px);margin-top:1.2em">Your community management sidekick.</h3><p class="body">A more approachable expression of the product's supporting role.</p></div>
+  <div class="card" style="background:var(--ink);color:white"><span class="mono" style="color:var(--spark)">Territory 03</span><h3 style="font-size:clamp(20px,2.1vw,32px);margin-top:1.2em">A home for every community.</h3><p style="color:#c1cbc3;font-size:clamp(10px,.85vw,13px);line-height:1.45">A broader, more emotional platform promise, suited to an ecosystem story.</p></div>
+ </div><p class="small" style="margin-top:1em">These are creative territories to test in Week 1, not approved final slogans.</p>
+ <div class="foot"><span>COMMUNITY OS / POSITIONING</span><span>07 / 20</span></div>
+</section>
+<section class="slide community">
+ <div class="topline"><span>07 / Conversion journey</span></div>
+ <p class="eyebrow">From first encounter to active organisation</p><h2 class="section-title">Make the next step<br><span class="accent">obvious at every stage.</span></h2>
+ <div class="funnel">
+  <div class="funnel-step"><span class="num">01 / AWARENESS</span><h3>Recognise the problem</h3><p>Product highlight reel, industry-specific explainers, paid awareness in priority cities and organisational use cases.</p><span class="deliver">Output: qualified attention</span></div>
+  <div class="funnel-step"><span class="num">02 / TRUST</span><h3>See the product work</h3><p>Feature breakdown ads, product walkthroughs, admin-task demos, use cases and proof from real organisations when available.</p><span class="deliver">Output: informed enquiry</span></div>
+  <div class="funnel-step"><span class="num">03 / CONVERSION</span><h3>Enquire, demo, onboard</h3><p>On-screen form → initial call → qualified demo with Hilda → onboarding → active organisation.</p><span class="deliver">Output: active community</span></div>
+ </div>
+ <div class="grid2" style="margin-top:2%;">
+  <div class="card"><h3>On-screen form · Four fields</h3><div class="pillrow"><span class="pill">Full name</span><span class="pill">Organisation name</span><span class="pill">Community size</span><span class="pill">Role</span></div><p class="body" style="margin-top:.8em">Confirmation message: “Thank you. Your details have been received. Someone from the Community OS team will call you as soon as possible.”</p></div>
+  <div class="card"><h3>Lead handoff</h3><p class="body">A lead-response person handles the first call, captures context and schedules qualified prospects. Hilda leads the product demo and conversion conversation.</p></div>
+ </div>
+ <div class="foot"><span>COMMUNITY OS / CONVERSION</span><span>08 / 20</span></div>
+</section>
+<section class="slide community">
+ <div class="topline"><span>08 / Content system</span></div>
+ <p class="eyebrow">Editorial grid · Specific to membership organisations</p><h2 class="section-title">Show the work the platform<br><span class="accent">takes off their hands.</span></h2>
+ <table class="table" style="margin-top:2%;flex:1">
+  <thead><tr><th style="width:18%">Content idea</th><th style="width:31%">Specific angle</th><th style="width:19%">Format</th><th style="width:32%">Purpose / audience</th></tr></thead>
+  <tbody>
+   <tr><td><strong>Where is your member record?</strong></td><td>Show the same member information scattered across spreadsheets, paper files and WhatsApp threads.</td><td>Carousel / motion explainer</td><td>Make the record-management problem visible to secretaries and administrators.</td></tr>
+   <tr><td><strong>Follow the dues</strong></td><td>Explain how payment tracking and ledgers support treasurers and finance officers.</td><td>Feature static / screen demo</td><td>Show payment visibility and reduce manual reconciliation anxiety.</td></tr>
+   <tr><td><strong>One organisation, many branches</strong></td><td>Show the administrative challenge of keeping branch information connected.</td><td>Carousel / short demo</td><td>Speak to national executives and branch coordinators.</td></tr>
+   <tr><td><strong>When leadership changes</strong></td><td>Explore the cost of institutional knowledge living in one officer's phone or files.</td><td>Editorial static / short film</td><td>Position the platform as continuity infrastructure.</td></tr>
+   <tr><td><strong>Member onboarding, step by step</strong></td><td>Walk through a member's path into the organisation and its records.</td><td>Product walkthrough</td><td>Help administrators picture implementation.</td></tr>
+   <tr><td><strong>Events without scattered updates</strong></td><td>Show how event information and member communication can sit alongside organisation operations.</td><td>Carousel / motion</td><td>Demonstrate connected day-to-day administration.</td></tr>
+   <tr><td><strong>What a digital ID changes</strong></td><td>Explain the role of member identification and access in a membership organisation.</td><td>Feature static / demo</td><td>Make a specific feature tangible to leadership and members.</td></tr>
+   <tr><td><strong>Inside a Community OS demo</strong></td><td>Show a real administrator task from start to finish using the actual product.</td><td>Screen recording / live demo cut</td><td>Move interested prospects from feature awareness to a product conversation.</td></tr>
+  </tbody>
+ </table>
+ <div class="foot"><span>COMMUNITY OS / CONTENT GRID</span><span>09 / 20</span></div>
+</section>
+<section class="slide fiona">
+ <div class="topline"><span>09 / Product strategy</span></div>
+ <div style="display:grid;grid-template-columns:1fr 1fr;gap:4%;align-items:center;flex:1">
+  <div><p class="eyebrow">Customer engagement · Shared inbox · AI replies</p><h2 class="title">One inbox.<br><span class="accent">Every customer.</span></h2><p class="sub">Bring WhatsApp, email and web chat into one working inbox. Give teams one place to manage customer conversations, with AI supporting routine replies.</p><div class="pillrow"><span class="pill">WhatsApp</span><span class="pill">Email</span><span class="pill">Web chat</span><span class="pill">AI-assisted replies</span></div></div>
+  <div class="inbox"><div class="inbox-card float1"><span class="inbox-badge">WhatsApp</span><div class="msg">Hi, is this item available?</div></div><div class="inbox-card main"><div class="ui-top"><b>FIONA / SHARED INBOX</b><span class="inbox-badge">3 channels connected</span></div><div class="ui-row"><div class="avatar" style="background:#c8edff"></div><div class="ui-line"></div><span class="small">WhatsApp</span></div><div class="msg">Can I get delivery today?</div><div class="ui-row"><div class="avatar" style="background:#d8f1ff"></div><div class="ui-line short"></div><span class="small">Email</span></div><div class="msg dark">Yes. We can confirm availability and delivery options.</div><div class="ui-row"><div class="avatar" style="background:#c9e7f4"></div><div class="ui-line"></div><span class="small">Web chat</span></div><div class="msg">Do you have a size guide?</div></div><div class="inbox-card float2"><span class="inbox-badge">AI assist</span><div class="msg">Suggested reply ready for review.</div></div></div>
+ </div><p class="small">Visual concept for the presentation. Replace with actual Fiona product screens in final production.</p>
+ <div class="foot"><span>FIONA / MARKET & ADOPTION</span><span>10 / 20</span></div>
+</section>
+<section class="slide fiona">
+ <div class="topline"><span>10 / Audience & market</span></div>
+ <p class="eyebrow">Who feels the inbox problem every day?</p><h2 class="section-title">Businesses where<br><span class="accent">the conversation is the sale.</span></h2>
+ <div class="grid3" style="margin-top:2%;flex:1">
+  <div class="card"><span class="tag blue">Primary buyer</span><h3 style="margin-top:1em">Business owner / operator</h3><p class="body">Owns customer experience and revenue. Needs visibility into incoming enquiries and confidence that messages are not being missed.</p><div class="rule"></div><p class="small"><b>Message:</b> Stop losing customer context across separate inboxes.</p></div>
+  <div class="card"><span class="tag">Daily user</span><h3 style="margin-top:1em">Customer support team</h3><p class="body">Handles repeated questions, handoffs and response volume. Needs a shared view of conversations and a manageable workflow.</p><div class="rule"></div><p class="small"><b>Message:</b> Handle customer conversations from one working inbox.</p></div>
+  <div class="card"><span class="tag">Influencer / user</span><h3 style="margin-top:1em">Sales & social commerce team</h3><p class="body">Responds to product questions, availability and purchase intent. Needs to keep customer conversations moving towards a sale.</p><div class="rule"></div><p class="small"><b>Message:</b> Keep the conversation connected from enquiry to response.</p></div>
+ </div>
+ <p class="small" style="margin-top:1em">Geographic priority and vertical focus are not yet confirmed. Validate target markets and strongest customer segments with the product team before allocating spend.</p>
+ <div class="foot"><span>FIONA / BUYER SEGMENTATION</span><span>11 / 20</span></div>
+</section>
+<section class="slide fiona">
+ <div class="topline"><span>11 / Conversion & content</span></div>
+ <p class="eyebrow">From fragmented conversations to shared workflow</p><h2 class="section-title">Demonstrate the workflow.<br><span class="accent">Don't just describe the inbox.</span></h2>
+ <div class="funnel">
+  <div class="funnel-step" style="border-top-color:#008ee6"><span class="num">01 / AWARENESS</span><h3>Spot the fragmentation</h3><p>Show a team switching between WhatsApp, email and web chat. Make the cost of scattered conversations recognisable.</p><span class="deliver" style="color:#0878ad">Output: product recognition</span></div>
+  <div class="funnel-step" style="border-top-color:#6fe3b3"><span class="num">02 / TRUST</span><h3>See one inbox work</h3><p>3D inbox film, real product walkthrough, channel connection, team handling and AI-assisted routine replies.</p><span class="deliver" style="color:#0878ad">Output: product understanding</span></div>
+  <div class="funnel-step" style="border-top-color:#0b3b58"><span class="num">03 / CONVERSION</span><h3>Request a demo / next step</h3><p>Dedicated Fiona sales page, direct enquiry capture and a defined demo or trial route confirmed with the product team.</p><span class="deliver" style="color:#0878ad">Output: qualified business lead</span></div>
+ </div>
+ <div class="grid2" style="margin-top:2%;flex:1">
+  <div class="card"><h3>Content grid</h3><ul class="list"><li><b>One inbox, three channels:</b> visual product explainer / carousel.</li><li><b>Where did that customer message go?</b> problem-led static / short motion.</li><li><b>From enquiry to response:</b> screen-recorded workflow.</li><li><b>AI reply, human oversight:</b> feature breakdown and use-case demo.</li></ul></div>
+  <div class="card"><h3>More content angles</h3><ul class="list"><li><b>Meet the shared inbox:</b> product introduction / highlight reel.</li><li><b>One conversation, shared by the team:</b> collaboration workflow demo.</li><li><b>What happens after a customer writes?</b> short customer journey film.</li><li><b>Fiona in a real business day:</b> scenario-led product demonstration.</li></ul></div>
+ </div>
+ <p class="small" style="margin-top:.7em">Fiona's form fields, trial availability and exact demo process remain to be agreed. Do not reuse Community OS's form by default.</p>
+ <div class="foot"><span>FIONA / CONVERSION & CONTENT</span><span>12 / 20</span></div>
+</section>
+<section class="slide axeon">
+ <div class="topline"><span>12 / Product strategy</span></div>
+ <div style="display:grid;grid-template-columns:1fr .9fr;gap:5%;align-items:center;flex:1">
+  <div><p class="eyebrow">Loyalty infrastructure · Offers · Repeat purchase</p><h2 class="title">Loyalty that<br><span class="accent">thinks for itself.</span></h2><p class="sub">Discount and loyalty infrastructure designed to help merchants attract customers and encourage repeat purchases through relevant offers.</p><div class="pillrow"><span class="pill">Retailers</span><span class="pill">FMCGs</span><span class="pill">Lifestyle brands</span><span class="pill">Consumers</span></div><p class="small" style="margin-top:1.2em">Website proof point: 3,000+ active retailers reported by Yebox. Confirm the latest approved figure before using it in paid creative.</p></div>
+  <div class="axeon-visual"><div class="coin">%</div><div class="offer"><span class="mono">A CUSTOMER OFFER</span><div class="big">SAVE<br>MORE.</div><p style="font-size:10px;line-height:1.3">A relevant offer gives a customer a reason to return.</p><span class="tag red">Offer unlocked</span></div><div class="offer smalloffer"><span class="mono">MERCHANT VIEW</span><div class="big">REPEAT</div><p style="font-size:9px">Turn an offer into another visit.</p></div></div>
+ </div><div class="foot"><span>AXEON / MARKET & ADOPTION</span><span>13 / 20</span></div>
+</section>
+<section class="slide axeon">
+ <div class="topline"><span>13 / Two-sided market</span></div>
+ <p class="eyebrow">Two audiences, one exchange</p><h2 class="section-title">Merchant value creates<br><span class="accent">consumer value.</span></h2>
+ <div class="grid2" style="margin-top:2%;flex:1">
+  <div class="card"><span class="tag red">Side A · Supply</span><h3 style="margin-top:.9em">Merchants & brands</h3><p class="body">Retailers, FMCGs and lifestyle brands seeking to attract customers, deploy offers and encourage repeat purchases.</p><div class="rule"></div><p class="mono">Merchant questions</p><ul class="list"><li>How do offers bring in incremental visits?</li><li>Can promotions encourage customers to return?</li><li>How do we make discounting more targeted?</li><li>How do we measure redemption and repeat behaviour?</li></ul><p class="small"><b>Acquisition route:</b> merchant outreach, category-specific use cases, commercial demos and onboarding.</p></div>
+  <div class="card"><span class="tag">Side B · Demand</span><h3 style="margin-top:.9em">Consumers & shoppers</h3><p class="body">People who want to discover relevant offers and redeem them with participating merchants.</p><div class="rule"></div><p class="mono">Consumer questions</p><ul class="list"><li>What offers are available near me or for me?</li><li>How do I discover a participating merchant?</li><li>How does redemption work?</li><li>Is the offer worth acting on now?</li></ul><p class="small"><b>Adoption route:</b> discover offers, understand redemption, visit merchant and complete a transaction.</p></div>
+ </div>
+ <div class="card" style="margin-top:1.2%;background:#3a1721;color:white;padding:1.5% 2%"><p style="margin:0;font-size:clamp(11px,.9vw,14px)"><b>Strategic dependency:</b> merchant acquisition and consumer adoption must reinforce each other. Consumer promotion without enough useful offers creates a weak experience. Merchant acquisition without customer activity weakens the commercial case.</p></div>
+ <div class="foot"><span>AXEON / MARKET DESIGN</span><span>14 / 20</span></div>
+</section>
+<section class="slide axeon">
+ <div class="topline"><span>14 / Conversion & content</span></div>
+ <p class="eyebrow">Prove the offer exchange works</p><h2 class="section-title">Show the merchant's reason<br><span class="accent">to participate.</span></h2>
+ <div class="funnel">
+  <div class="funnel-step" style="border-top-color:#f82f51"><span class="num">01 / AWARENESS</span><h3>Explain the opportunity</h3><p>Introduce the loyalty and discount model to merchants. Show the consumer value of discovering relevant offers.</p><span class="deliver" style="color:#c51d43">Output: merchant / consumer awareness</span></div>
+  <div class="funnel-step" style="border-top-color:#ff9aab"><span class="num">02 / TRUST</span><h3>Show the mechanics</h3><p>Demonstrate offer creation, discovery and redemption using confirmed product workflows and participating merchant examples.</p><span class="deliver" style="color:#c51d43">Output: understood value exchange</span></div>
+  <div class="funnel-step" style="border-top-color:#7e1830"><span class="num">03 / CONVERSION</span><h3>Activate both sides</h3><p>Merchant enquiry → commercial conversation → merchant onboarding → live offer → consumer discovery and redemption.</p><span class="deliver" style="color:#c51d43">Output: active offers & redemptions</span></div>
+ </div>
+ <div class="grid2" style="margin-top:2%;flex:1">
+  <div class="card"><h3>Merchant-facing content</h3><ul class="list"><li><b>What does a repeat customer cost you?</b> problem-led commercial static.</li><li><b>How Axeon offers work:</b> merchant explainer / demo.</li><li><b>From offer to redemption:</b> step-by-step workflow film.</li><li><b>Discounting with a purpose:</b> carousel on targeted incentives.</li></ul></div>
+  <div class="card"><h3>Consumer-facing content</h3><ul class="list"><li><b>Find an offer worth using:</b> discovery walkthrough.</li><li><b>How to redeem:</b> short instructional video.</li><li><b>Offer of the week:</b> merchant-led promotional creative.</li><li><b>Where can Axeon take you?</b> participating merchant spotlight.</li></ul></div>
+ </div>
+ <p class="small" style="margin-top:.7em">Confirm merchant onboarding flow, consumer app journey, redemption mechanics and priority categories before finalising creative claims and conversion CTAs.</p>
+ <div class="foot"><span>AXEON / CONVERSION & CONTENT</span><span>15 / 20</span></div>
+</section>
+<section class="slide">
+ <div class="topline"><span>15 / Sales infrastructure</span></div>
+ <p class="eyebrow">Three product pages · Three conversion paths</p><h2 class="section-title">Every campaign lands<br><span class="accent">somewhere built to convert.</span></h2>
+ <div class="grid3" style="margin-top:2%;flex:1">
+  <div class="card"><span class="tag green">Community OS</span><h3 style="margin-top:1em">Organisation page</h3><ul class="list"><li>Who the platform is for.</li><li>Member records, administration, payments and events.</li><li>Real organisation use cases.</li><li>Four-field enquiry form.</li><li>Confirmation and call handoff.</li></ul><p class="small"><b>Primary CTA:</b> Enquire about Community OS.</p></div>
+  <div class="card"><span class="tag blue">Fiona</span><h3 style="margin-top:1em">Shared inbox page</h3><ul class="list"><li>WhatsApp, email and web chat in one place.</li><li>Shared team workflow.</li><li>AI-assisted routine replies.</li><li>Actual product walkthrough.</li><li>Demo / trial route to confirm.</li></ul><p class="small"><b>Primary CTA:</b> Request a Fiona demo / next step.</p></div>
+  <div class="card"><span class="tag red">Axeon</span><h3 style="margin-top:1em">Loyalty & offers page</h3><ul class="list"><li>Separate merchant and consumer propositions.</li><li>How offers are created, found and redeemed.</li><li>Approved merchant proof and use cases.</li><li>Separate merchant and consumer CTAs.</li><li>Track each conversion path.</li></ul><p class="small"><b>Primary CTA:</b> Join as a merchant / discover offers.</p></div>
+ </div>
+ <div class="card" style="margin-top:1.2%;padding:1.4% 2%"><p class="body" style="margin:0"><b>Ownership:</b> Hilda leads page strategy, messaging, copy and conversion requirements. The external designer is scoped to design the pages alongside monthly static content. Technical build, integrations and QA ownership must be confirmed before the production quote is locked.</p></div>
+ <div class="foot"><span>YEBOX / LANDING PAGES</span><span>16 / 20</span></div>
+</section>
+<section class="slide">
+ <div class="topline"><span>16 / Content operations</span></div>
+ <p class="eyebrow">Publishing commitment</p><h2 class="section-title">One post per product,<br><span class="accent">every day.</span></h2>
+ <div class="grid3" style="margin-top:2%;">
+  <div class="card"><span class="tag green">Community OS</span><div class="metric" style="margin-top:.5em">30</div><div class="metric-label">Posts per month</div><p class="small">90 posts across the three-month campaign.</p></div>
+  <div class="card"><span class="tag blue">Fiona</span><div class="metric" style="margin-top:.5em">30</div><div class="metric-label">Posts per month</div><p class="small">90 posts across the three-month campaign.</p></div>
+  <div class="card"><span class="tag red">Axeon</span><div class="metric" style="margin-top:.5em">30</div><div class="metric-label">Posts per month</div><p class="small">90 posts across the three-month campaign.</p></div>
+ </div>
+ <div class="grid2" style="margin-top:2%;flex:1">
+  <div class="card"><h3>Production model</h3><p class="body">A dedicated external designer produces the agreed monthly static content across all three products. Hilda owns direction, briefs, review and quality control.</p><div class="rule"></div><p class="mono">Monthly total</p><div class="metric">90</div><div class="metric-label">Content pieces / month</div></div>
+  <div class="card"><h3>Format mix to be approved</h3><ul class="list"><li><b>Static explainers:</b> product propositions and specific features.</li><li><b>Carousels:</b> step-by-step education and use cases.</li><li><b>Motion:</b> feature flows and short product demonstrations.</li><li><b>Evergreen highlight reels:</b> one per product, separately produced.</li></ul><p class="small">The 90-piece cadence is the volume target. The exact static, carousel and motion split must be agreed with the designer so the workload and quote are realistic.</p></div>
+ </div><div class="foot"><span>YEBOX / CONTENT PRODUCTION</span><span>17 / 20</span></div>
+</section>
+<section class="slide">
+ <div class="topline"><span>17 / Roles & responsibilities</span></div>
+ <p class="eyebrow">Who owns what</p><h2 class="section-title">Hilda leads the growth work.<br><span class="accent">Specialists handle production.</span></h2>
+ <div class="grid2" style="margin-top:2%;flex:1">
+  <div class="card"><span class="tag green">Hilda · Strategy & growth lead</span><table class="table"><tr><td>Strategy & supervision</td><td>Positioning, campaign direction, planning and oversight across all three products.</td></tr><tr><td>Content direction</td><td>Editorial strategy, monthly calendars, briefs, review and creative QA.</td></tr><tr><td>Lead generation</td><td>Campaign planning and execution to attract qualified prospects.</td></tr><tr><td>Sales pages</td><td>Messaging, copy, page structure and conversion requirements.</td></tr><tr><td>Demo & closing</td><td>Follow up with qualified leads, conduct product demos and pursue conversion.</td></tr><tr><td>Performance</td><td>Monitor campaign results, lead quality, onboarding and adoption.</td></tr></table></div>
+  <div class="card"><span class="tag">External support</span><table class="table"><tr><td>Designer</td><td>Monthly static content production across three products; sales landing page design, subject to final brief and capability.</td></tr><tr><td>Video producer</td><td>Three evergreen product highlight reels.</td></tr><tr><td>AI film production</td><td>Produce 8 AI videos across Community OS, Fiona and Axeon within the ₦200,000 production allocation. Tool subscriptions have a separate ₦150,000 allowance.</td></tr><tr><td>Lead-response support</td><td>Receive initial enquiries, collect details, explain next steps and schedule qualified demos with Hilda.</td></tr><tr><td>Web implementation</td><td>Technical landing-page build, form integration and QA owner to be confirmed.</td></tr></table></div>
+ </div><p class="small" style="margin-top:1em">Hilda's demo and closing responsibility applies to qualified prospects handed over through the agreed lead-response process.</p>
+ <div class="foot"><span>YEBOX / DELIVERY MODEL</span><span>18 / 20</span></div>
+</section>
+<section class="slide">
+ <div class="topline"><span>18 / Budget</span></div>
+ <p class="eyebrow">Known costs · Three-month engagement</p><h2 class="section-title">Separate the fee,<br><span class="accent">production and media.</span></h2>
+ <div class="grid2" style="margin-top:2%;flex:1;grid-template-columns:1.2fr .8fr">
+  <div class="card"><table class="table"><thead><tr><th>Cost item</th><th>Basis</th><th>3-month cost</th></tr></thead><tbody>
+   <tr><td><b>Strategy & management fee</b></td><td>Hilda · 3 months</td><td><b>₦1,000,000</b></td></tr>
+   <tr><td><b>Static content design</b></td><td>₦200,000 / month</td><td><b>₦600,000</b></td></tr>
+   <tr><td><b>Product highlight reels</b></td><td>3 reels · estimated</td><td><b>₦500,000</b></td></tr>
+   <tr><td><b>AI film production</b></td><td>8 videos across 3 products</td><td><b>₦200,000</b></td></tr>
+   <tr><td><b>AI production tools</b></td><td>Tools / subscriptions</td><td><b>₦150,000</b></td></tr>
+   <tr><td><b>Paid media</b></td><td>₦50k × 3 products × 3 months</td><td><b>₦450,000</b></td></tr>
+   <tr style="background:#e8eee4"><td colspan="2"><b>Current known total</b></td><td><b>₦2,900,000</b></td></tr>
+  </tbody></table><p class="small" style="margin-top:1em">Hilda's fee payment: ₦500,000 upon contract signing and ₦500,000 at the end of the three-month engagement.</p></div>
+  <div class="total"><p class="eyebrow" style="color:var(--spark)">Current known project cost</p><div class="metric">₦2.90m</div><div class="metric-label">Across three months</div><div class="rule" style="background:#ffffff33"></div><p class="budget-note">Media is ₦150,000 per month across the three products. Static production is ₦200,000 per month for the combined content workload. AI film production covers 8 videos across all three products for ₦200,000, with ₦150,000 allocated to tools and subscriptions.</p><p class="budget-note">The ₦500,000 highlight-reel figure is an estimate, pending the producer's final quote.</p></div>
+ </div>
+ <div class="foot"><span>YEBOX / COST SUMMARY</span><span>19 / 20</span></div>
+</section>
+<section class="slide">
+ <div class="topline"><span>19 / Controls & decisions</span></div>
+ <p class="eyebrow">Items outside the known total</p><h2 class="section-title">Protect the scope<br><span class="accent">before production starts.</span></h2>
+ <div class="grid2" style="margin-top:2%;flex:1">
+  <div class="card"><h3>Separately quote / confirm</h3><ul class="list"><li>Additional motion design beyond the three highlight reels.</li><li>Additional AI film production beyond the 8-video package and ₦150,000 tool allowance.</li><li>Lead-response person's fee and availability.</li><li>Landing-page technical development, integrations and hosting.</li><li>Any extra video or product demo production beyond the agreed scope.</li></ul></div>
+  <div class="card"><h3>Decisions required before launch</h3><ul class="list"><li>Confirm exact product features and access to real product screens.</li><li>Confirm Fiona's priority geographies, demo / trial path and form fields.</li><li>Confirm Axeon's merchant onboarding, consumer journey and redemption mechanics.</li><li>Confirm who owns landing-page build, form routing and technical QA.</li><li>Approve monthly content format mix and designer deliverable volume.</li><li>Confirm reporting access and baseline adoption data.</li></ul></div>
+ </div>
+ <div class="card" style="margin-top:1.2%;background:#e8eee4;padding:1.4% 2%"><p class="body" style="margin:0"><b>Measurement rule:</b> track product adoption, not just attention. Community OS: active organisations. Fiona: businesses onboarded, connected channels and active shared-inbox use. Axeon: active merchants, live offers, redemptions and repeat transactions.</p></div>
+ <div class="foot"><span>YEBOX / SCOPE CONTROL</span><span>20 / 20</span></div>
+</section>
+</div>
+<div class="hint">← → navigate · F fullscreen · P print</div>
+<div class="controls"><button id="prev" aria-label="Previous slide">‹</button><span id="count">01 / 20</span><button id="next" aria-label="Next slide">›</button></div><div class="progress" id="progress"></div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];let current=0;const count=document.getElementById('count'),progress=document.getElementById('progress');
+function show(n){current=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,i)=>s.classList.toggle('active',i===current));count.textContent=String(current+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');progress.style.width=((current+1)/slides.length*100)+'%'}
+document.getElementById('prev').onclick=()=>show(current-1);document.getElementById('next').onclick=()=>show(current+1);
+document.addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(current+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(current-1)}if(e.key.toLowerCase()==='f'){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()}if(e.key.toLowerCase()==='p')window.print()});
+let touchX=0;document.addEventListener('touchstart',e=>touchX=e.changedTouches[0].screenX,{passive:true});document.addEventListener('touchend',e=>{let d=e.changedTouches[0].screenX-touchX;if(Math.abs(d)>55)show(current+(d<0?1:-1))},{passive:true});show(0);
+</script>
+</body></html>
